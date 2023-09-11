@@ -82,11 +82,11 @@ namespace ClassLibrary1
             sb.AppendLine($"Legajo {_legajo}");
             sb.AppendLine($"Nota 1er parcial: {_notaPrimerParcial}");
             sb.AppendLine($"Nota 2do parcial: {_notaSegundoParcial}");
-            sb.AppendLine($"Promedio de notas: {_CalcularPromedio():2N}");
+            sb.AppendLine($"Promedio de notas: {_CalcularPromedio():F2}");
             int notaFinal = CalcularNotaFinal();
             if (notaFinal != -1)
             {
-                sb.AppendLine($"Nota final");
+                sb.AppendLine($"Nota final: {notaFinal}");
             }
             else
             {
